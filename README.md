@@ -2,4 +2,4 @@
 
 NodeBR training
 
-- [] - Modulo 0 - Introdução
+- [] Modulo 0 - Introdução
