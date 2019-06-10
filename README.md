@@ -26,4 +26,14 @@
 
 ---
 
-## Modulo 2 MNIPULAÇAO DE LISTAS.
+## Modulo 2 - MNIPULAÇAO DE LISTAS.
+
+- Introdução ao capitulo.
+- Manipulaçao de lista com For/ForIn/ForOf.
+- Criando nosso próprio Array.Map.
+- Criando nosso próprio Array.Filter.
+- Criando nosso próprio Array.Reduce.
+
+---
+
+## Modulo 3 - INTRODUÇAO A DESENVOLVIMENTO DE TESTES AUTOMATIZADOS.
