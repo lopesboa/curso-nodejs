@@ -37,3 +37,10 @@
 ---
 
 ## Modulo 3 - INTRODUÇAO A DESENVOLVIMENTO DE TESTES AUTOMATIZADOS.
+
+- Introdução a desenvolvimento de testes automatizados em JS.
+- Ambiente e configuração do ciclo de testes.
+
+---
+
+## Modulo 4 - NODE.JS ALÉM DA WEB - CRIANDO FERRAMENTAS DE LINHA DE COMANDO.
