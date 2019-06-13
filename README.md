@@ -44,3 +44,14 @@
 ---
 
 ## Modulo 4 - NODE.JS ALÉM DA WEB - CRIANDO FERRAMENTAS DE LINHA DE COMANDO.
+
+- Introduçao ao capitulo.
+- Manipulando arquivos - READ.
+- Manipulando arquivos - CREATE.
+- Manipulando arquivos - DELETE.
+- Manipulando arquivos - UPDATE.
+- Criando ferramentas de linha de comando.
+
+---
+
+## Modulo 5 - BANCO DE DADOS - PROJETO MULT-BANCO DE DADOS.
