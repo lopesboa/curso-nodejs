@@ -1,7 +1,1 @@
-[
-  {
-    "name": "flash",
-    "power": "speed",
-    "id": 1
-  }
-]
+[{"id":1,"name":"flash","power":"speed"},{"id":2,"name":"Batman","power":"Dinheiro"},{"id":1,"name":"flash","power":"speed"},{"id":2,"name":"Lanterna Verde","power":"Energia do Anel"},{"id":1,"name":"flash","power":"speed"},{"id":2,"name":"Batman","power":"Dinheiro"}]
