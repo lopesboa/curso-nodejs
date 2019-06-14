@@ -1,6 +1,7 @@
-const { readFile, writeFile } = require("fs");
+const { readFile, writeFile } = require('fs');
 
-const { promisify } = require("util");
+const { promisify } = require('util');
+
 const readFileAsync = promisify(readFile);
 const writeFileAsync = promisify(writeFile);
 
@@ -9,12 +10,14 @@ const writeFileAsync = promisify(writeFile);
 
 class Database {
   constructor() {
-    this.FILE_NAME = "herois.json";
+    this.FILE_NAME = 'herois.json';
   }
+
   async getDataFile() {
-    const file = await readFileAsync(this.FILE_NAME, "utf8");
+    const file = await readFileAsync(this.FILE_NAME, 'utf8');
     return JSON.parse(file.toString());
   }
+
   async writeFile(data) {
     await writeFileAsync(this.FILE_NAME, JSON.stringify(data));
     return true;
@@ -38,28 +41,28 @@ class Database {
 
   async update(id, modifications) {
     const data = await this.getDataFile();
-    const indice = data.findIndex(item => item.id === parseInt(id));
+    const indice = data.findIndex(item => item.id === id);
     if (indice === -1) {
-      throw Error("O heroi informado não existe.");
+      throw Error('O heroi informado não existe.');
     }
 
     const actual = data[indice];
     const objectUpdate = { ...actual, ...modifications };
     data.splice(indice, 1);
-    return await this.writeFile([...data, objectUpdate]);
+    return this.writeFile([...data, objectUpdate]);
   }
 
   async delete(id) {
     if (!id) {
-      return await this.writeFile([]);
+      return this.writeFile([]);
     }
     const data = await this.getDataFile();
-    const indice = data.findIndex(item => item.id === parseInt(id));
+    const indice = data.findIndex(item => item.id === id);
     if (indice === -1) {
-      throw Error("O usuário informado não existe.");
+      throw Error('O usuário informado não existe.');
     }
     data.splice(indice, 1);
-    return await this.writeFile(data);
+    return this.writeFile(data);
   }
 }
 
